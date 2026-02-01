@@ -24,33 +24,34 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative border-t border-border bg-card/50">
-            <div className="container-custom py-16">
-                <div className="grid gap-12 md:grid-cols-3">
+        <footer className="relative border-t border-border bg-card/30">
+            <div className="container-custom py-14">
+                {/* Main Footer Content */}
+                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                     {/* Brand */}
-                    <div className="space-y-4">
-                        <a href="#home" className="group flex items-center gap-2">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent">
-                                <span className="text-lg font-bold text-white">M</span>
+                    <div className="sm:col-span-2 lg:col-span-1 space-y-4">
+                        <a href="#home" className="group inline-flex items-center gap-2.5">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent">
+                                <span className="text-base font-bold text-white">M</span>
                             </div>
-                            <span className="text-lg font-semibold">
+                            <span className="text-base font-semibold">
                                 <span className="text-gradient">Mollalign</span>
                             </span>
                         </a>
-                        <p className="max-w-xs text-sm text-muted-foreground">
+                        <p className="max-w-xs text-sm text-muted-foreground leading-relaxed">
                             Full-stack developer passionate about building exceptional digital experiences.
                         </p>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="mb-4 font-semibold">Quick Links</h4>
-                        <ul className="space-y-2">
+                        <h4 className="mb-4 text-sm font-semibold text-foreground">Quick Links</h4>
+                        <ul className="space-y-2.5">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
-                                        className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                                        className="text-sm text-muted-foreground transition-colors duration-300 hover:text-primary"
                                     >
                                         {link.name}
                                     </a>
@@ -59,22 +60,40 @@ export default function Footer() {
                         </ul>
                     </div>
 
+                    {/* Contact */}
+                    <div>
+                        <h4 className="mb-4 text-sm font-semibold text-foreground">Contact</h4>
+                        <ul className="space-y-2.5 text-sm text-muted-foreground">
+                            <li>
+                                <a href="mailto:molledan69@gmail.com" className="transition-colors duration-300 hover:text-primary">
+                                    molledan69@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+251926560362" className="transition-colors duration-300 hover:text-primary">
+                                    +251 926 560 362
+                                </a>
+                            </li>
+                            <li>Hawassa City, Ethiopia</li>
+                        </ul>
+                    </div>
+
                     {/* Social */}
                     <div>
-                        <h4 className="mb-4 font-semibold">Connect</h4>
-                        <div className="flex gap-3">
+                        <h4 className="mb-4 text-sm font-semibold text-foreground">Connect</h4>
+                        <div className="flex gap-2">
                             {socialLinks.map((social) => (
                                 <motion.a
                                     key={social.name}
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
-                                    whileHover={{ scale: 1.1 }}
+                                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:text-primary hover:bg-primary/5"
+                                    whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     aria-label={social.name}
                                 >
-                                    <social.icon size={18} />
+                                    <social.icon size={16} />
                                 </motion.a>
                             ))}
                         </div>
@@ -82,19 +101,20 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
-                    <p className="flex items-center gap-1 text-sm text-muted-foreground">
+                <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+                    <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
                         © {new Date().getFullYear()} Mollalign. Made with
-                        <Heart size={14} className="text-red-500" fill="currentColor" />
+                        <Heart size={13} className="text-red-500" fill="currentColor" />
                         in Ethiopia
                     </p>
                     <motion.button
                         onClick={scrollToTop}
-                        className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+                        className="flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-300 hover:text-primary"
                         whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.95 }}
                     >
                         Back to top
-                        <ArrowUp size={16} />
+                        <ArrowUp size={14} />
                     </motion.button>
                 </div>
             </div>
