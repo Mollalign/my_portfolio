@@ -84,26 +84,22 @@ export default function About() {
                                 </h3>
 
                                 <p className="text-muted-foreground leading-relaxed">
-                                    My journey into software development began with a simple curiosity about how digital
-                                    products work. That curiosity quickly transformed into a passion for creating them.
+                                    I am <span className="text-foreground font-medium">Mollalign Daniel</span>, a 4th-year Computer Science student living in <span className="text-foreground font-medium">Hawassa City</span>. I am set to graduate in June 2026.
                                 </p>
 
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Today, I specialize in building full-stack web applications and mobile apps using
-                                    modern technologies. I love taking complex problems and breaking them down into
-                                    elegant, user-friendly solutions.
+                                    As a passionate <span className="text-foreground font-medium">Full-Stack Developer</span>, I specialize in building web and mobile applications using modern technologies. My journey involves breaking down complex problems into elegant, user-friendly solutions.
                                 </p>
 
                                 <p className="text-muted-foreground leading-relaxed">
-                                    When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-                                    contributing to open-source projects, or sharing knowledge with the developer community.
+                                    I love exploring new technologies, contributing to open-source projects, and constantly learning to improve my craft.
                                 </p>
 
                                 {/* Personal touch */}
                                 <div className="flex items-center gap-3 pt-4">
                                     <Heart className="text-red-500" size={20} />
                                     <span className="text-sm text-muted-foreground">
-                                        Based in Ethiopia • Building for the world
+                                        Based in Hawassa City, Ethiopia • Future Graduate '26
                                     </span>
                                 </div>
                             </div>

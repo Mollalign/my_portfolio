@@ -6,8 +6,8 @@ import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp } from "lucide-react";
 const socialLinks = [
     { name: "GitHub", icon: Github, href: "https://github.com/Mollalign" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/mollalign-daniel-ba88aa387/" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
-    { name: "Email", icon: Mail, href: "mailto:hello@example.com" },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/mollalignD" },
+    { name: "Email", icon: Mail, href: "mailto:molledan69@gmail.com" },
 ];
 
 const navLinks = [

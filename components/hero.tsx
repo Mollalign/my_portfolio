@@ -7,8 +7,8 @@ import Image from "next/image";
 const socialLinks = [
     { name: "GitHub", icon: Github, href: "https://github.com/Mollalign" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/mollalign-daniel-ba88aa387/" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
-    { name: "Email", icon: Mail, href: "mailto:hello@example.com" },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/mollalignD" },
+    { name: "Email", icon: Mail, href: "mailto:molledan69@gmail.com" },
 ];
 
 const techStack = ["Next.js", "React", "TypeScript", "Node.js", "Django", "AI/ML Engineer", "Flutter"];
@@ -70,7 +70,7 @@ export default function Hero() {
                         className="heading-xl mb-6"
                     >
                         Hi, I&apos;m{" "}
-                        <span className="text-gradient">Mollalign</span>
+                        <span className="text-gradient">Mollalign Daniel</span>
                         <br />
                         <span className="text-muted-foreground text-4xl sm:text-5xl md:text-6xl">
                             Full-Stack Developer

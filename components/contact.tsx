@@ -20,9 +20,24 @@ export default function Contact() {
     };
 
     const contactInfo = [
-        { icon: Mail, label: "Email", value: "hello@mollalign.dev", href: "mailto:hello@mollalign.dev" },
-        { icon: MapPin, label: "Location", value: "Addis Ababa, Ethiopia", href: null },
-        { icon: Phone, label: "Phone", value: "+251 9XX XXX XXX", href: "tel:+251900000000" },
+        {
+            title: "Email",
+            value: "molledan69@gmail.com",
+            icon: Mail,
+            href: "mailto:molledan69@gmail.com",
+        },
+        {
+            title: "Phone",
+            value: "0926560362",
+            icon: Phone,
+            href: "tel:+251926560362",
+        },
+        {
+            title: "Location",
+            value: "Hawassa City, Ethiopia",
+            icon: MapPin,
+            href: "https://maps.google.com/?q=Hawassa,Ethiopia",
+        },
     ];
 
     return (
@@ -60,7 +75,7 @@ export default function Contact() {
                         <div className="space-y-6">
                             {contactInfo.map((item, index) => (
                                 <motion.div
-                                    key={item.label}
+                                    key={item.title}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
@@ -70,7 +85,7 @@ export default function Contact() {
                                         <item.icon size={22} />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-muted-foreground">{item.label}</p>
+                                        <p className="text-sm text-muted-foreground">{item.title}</p>
                                         {item.href ? (
                                             <a href={item.href} className="font-medium text-foreground hover:text-primary transition-colors">
                                                 {item.value}
@@ -94,7 +109,7 @@ export default function Contact() {
                             <p className="mb-6 text-muted-foreground">
                                 I&apos;m currently available for freelance work and open to discussing new opportunities.
                             </p>
-                            <a href="mailto:hello@mollalign.dev" className="btn-primary">
+                            <a href="mailto:molledan69@gmail.com" className="btn-primary">
                                 <Mail size={18} />
                                 Send an Email
                             </a>
