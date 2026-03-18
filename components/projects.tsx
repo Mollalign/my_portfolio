@@ -16,11 +16,11 @@ const projects = [
         featured: true,
     },
     {
-        title: "AI Tutor",
+        title: "H2M AI",
         description: "Intelligent mobile learning app featuring real-time AI chat assistance, personalized learning paths, and interactive study sessions.",
         image: "/images/mobile-app.jpg",
         tech: ["Flutter", "FastAPI", "Redis", "RAG"],
-        liveUrl: "https://github.com/Mollalign/Ai_tutor_Api.git",
+        liveUrl: "https://h2m-ai-web-app.vercel.app/",
         githubUrl: "https://github.com/Mollalign/mobile_app_ai_tutor.git",
         featured: true,
     },
