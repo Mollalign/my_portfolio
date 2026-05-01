@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -76,6 +77,7 @@ export default function RootLayout({
       <body
         className={`${sora.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
+        <script src="https://agents.dante-ai.com/embed.js" data-agent-id="e2df718a-2628-49e1-912b-bb8d3af51f06" data-widget-key="wk_1P1UU8i4HOWQTCJjxuBbob-i9u-nc55D" crossorigin="anonymous" async></script>
         {children}
       </body>
     </html>
