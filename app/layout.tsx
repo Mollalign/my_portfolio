@@ -79,12 +79,7 @@ export default function RootLayout({
       >
         {children}
       
-        <Script
-          src="https://agents.dante-ai.com/embed.js"
-          data-agent-id="e2df718a-2628-49e1-912b-bb8d3af51f06"
-          data-widget-key="wk_1P1UU8i4HOWQTCJjxuBbob-i9u-nc55D"
-          strategy="afterInteractive"
-        />
+        <script src="https://www.dante-ai.com/embed.js" data-agent-id="d20748aa-9b16-42ad-b336-ca2cd8abc598" data-widget-key="wk_6DW02dXAZEETkqT22BNlo0VV5j9FUerC" crossorigin="anonymous" async></script>
       </body>
     </html>
   );
