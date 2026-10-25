@@ -194,6 +194,7 @@ export default function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.2 }}
                             >
+                                {/*
                                 <Image
                                     src="/images/my_photo-2.jpg"
                                     alt="Mollalign Daniel - Full-Stack Developer"
@@ -201,7 +202,7 @@ export default function Hero() {
                                     sizes="(max-width: 640px) 260px, (max-width: 1024px) 300px, 360px"
                                     className="object-cover object-top"
                                     priority
-                                />
+                                />*/}
                                 {/* Subtle gradient overlay at bottom */}
                                 <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background/60 to-transparent" />
                             </motion.div>
